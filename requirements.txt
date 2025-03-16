@@ -1,0 +1,9 @@
+pytorch_lightning==2.0.0
+omegaconf==2.2.2
+wandb==0.12.18
+ml_collections==0.1.1
+clean-fid
+ninja 
+imageio 
+imageio-ffmpeg
+kornia

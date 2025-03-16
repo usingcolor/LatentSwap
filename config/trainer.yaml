@@ -1,0 +1,21 @@
+checkpoint:
+  save_dir: "/DATA/checkpoints"
+  callback:
+    monitor: "validation / id_loss"
+    save_top_k: -1
+    verbose: True
+    every_n_train_steps: 25000
+
+wandb:
+  project: "transface"
+  entity: "ntire2021"
+
+trainer:
+  max_epochs: 10000
+  num_sanity_val_steps: 10
+  fast_dev_run: False
+  check_val_every_n_epoch: 1
+  progress_bar_refresh_rate: 1
+  benchmark: True
+  gradient_clip_val: 1.0
+  strategy: 'ddp'

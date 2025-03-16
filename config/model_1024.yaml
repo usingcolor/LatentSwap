@@ -1,0 +1,25 @@
+latent_type: 'wp'
+style_gan:
+  args:
+    size: 1024
+    style_dim: 512
+    n_mlp: 8
+    channel_multiplier: 2
+  checkpoint_path: "/workspace/LatentSwap/pretrained_models/ffhq.pkl"
+  batch_size: 32
+
+embedder:
+  checkpoint_path: "/workspace/smooth-swap/epoch=5-step=109999.ckpt"
+
+loss:
+  id_coeff: 1
+  lp_coeff: 100
+  f_3d_checkpoint_path: "model/Deep3DFaceRecon_pytorch/checkpoints/epoch_20.pth"
+
+optimizer:
+    target: "torch.optim.AdamW"
+    params:
+      lr: 1e-4
+      betas: 
+      - 0.9
+      - 0.999
