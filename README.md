@@ -30,8 +30,14 @@ docker build . -t latentswap:latest
 docker run -it --ipc host --gpus "device=0" -v /PATH_TO_SAVE:/DATA --name latentswap latentswap:latest
 ```
 
+### Pre-Trained Model for StyleGAN2
+Download checkpoint from [official checkpoint](https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/ffhq.pkl) and copy it to '/workspace/' in docker container.
+```
+docker cp ffhq.pkl latentswap:/workspace/
+```
+
 ### Pre-Trained Model for Smooth Identity Embedder 
-Download checkpoint with [this](https://drive.google.com/file/d/1Wumi0CiBVkdPr6qukAHD9f3mSDOeOLo_/view?usp=sharing) link and copy it to '/workspace' in docker container
+Download checkpoint with [this](https://drive.google.com/file/d/1Wumi0CiBVkdPr6qukAHD9f3mSDOeOLo_/view?usp=sharing) link and copy it to '/workspace' in docker container.
 
 ```
 docker cp epoch=5-step=109999.ckpt latentswap:/workspace/
