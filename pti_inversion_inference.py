@@ -14,7 +14,7 @@ import torchvision
 from latentswap_pl import LatentSwap
 from training.coaches.multi_id_coach import MultiIDCoach
 from torch.utils.data import DataLoader
-from utils.ImagesDataset import ImagesDataset
+from utils.images_dataset import ImagesDataset
 
 
 
