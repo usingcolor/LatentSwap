@@ -1,7 +1,7 @@
 import os
 import torch
 from tqdm import tqdm
-from configs import paths_config, hyperparameters, global_config
+from pti_configs import paths_config, hyperparameters, global_config
 from training.coaches.base_coach import BaseCoach
 from utils.log_utils import log_images_from_w
 

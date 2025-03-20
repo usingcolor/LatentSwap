@@ -8,7 +8,7 @@ import torch
 from torchvision import transforms
 from lpips import LPIPS
 from training.projectors import w_projector
-from configs import global_config, paths_config, hyperparameters
+from pti_configs import global_config, paths_config, hyperparameters
 from criteria import l2_loss
 from models.e4e.psp import pSp
 from utils.models_utils import toogle_grad, load_old_G

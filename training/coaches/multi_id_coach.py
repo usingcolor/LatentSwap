@@ -5,7 +5,7 @@ import torch
 # from tqdm import tqdm
 from training.projectors import w_projector
 
-from configs import paths_config, hyperparameters, global_config
+from pti_configs import paths_config, hyperparameters, global_config
 from training.coaches.base_coach import BaseCoach
 
 

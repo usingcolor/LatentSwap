@@ -14,7 +14,7 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 from tqdm import tqdm
-from configs import global_config, hyperparameters
+from pti_configs import global_config, hyperparameters
 import dnnlib
 from utils.log_utils import log_image_from_w
 
